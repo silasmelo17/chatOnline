@@ -1,0 +1,16 @@
+{
+  "name": "chatOnline",
+  "version": "1.0.0",
+  "description": "chat online",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "socket.io": "^3.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
