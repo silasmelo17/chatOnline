@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Online</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.1/socket.io.js" integrity="sha512-oFOCo2/3DtjrJG4N27BjSLQWoiBv171sK6a+JiWjp/7agxC2nCUP358AqzxkBUb5jX8g6CYLPdSKQTbC0weCwA==" crossorigin="anonymous"></script>
+  <script src="/js/index.js" defer ></script>
+</head>
+<body>
+
+  <form id="form" class="container center">
+    <input 
+      name="user"
+      type="text" 
+      placeholder="Como deseja ser chamado ?"
+      autocomplete="off" 
+    />
+  
+    <div class="messages">
+    </div>
+    
+    <div class='btn-container'>
+      <input
+        type="text"
+        name="message"
+        autocomplete="off" 
+        placeholder="Digite uma messagem" 
+      >
+      <button id='send'>
+        <i class="far fa-paper-plane"></i>
+      </button>
+    </div>
+  </form>
+
+</body>
+</html>
