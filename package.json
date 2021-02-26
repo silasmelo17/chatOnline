@@ -2,12 +2,15 @@
   "name": "chatOnline",
   "version": "1.0.0",
   "description": "chat online",
-  "main": "index.js",
+  "main": "server.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon index.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
     "socket.io": "^3.1.1"
   },
   "devDependencies": {
