@@ -1,0 +1,42 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+body {
+  font: 400 16px Roboto, sans-serif;
+  letter-spacing: 2px;
+}
+
+input, textarea, button, label, select {
+  font: 400 18px Roboto, sans-serif;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+input, textarea, select, button {
+  padding: 8px 16px;
+  border: 1px solid #acacac;
+  color: #1b1b1b;
+}
+
+input, textarea {
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Nunito, sans-serif;
+}
