@@ -25,13 +25,14 @@
   </header>
 
   <main class="container center">
-    
-    <form class='room'>
+    <form action="/chat" method="POST" class='room'>
       <label for="room">Criar nova sala</label>
       <input 
         id="room"
         type="text" 
+        name="name"
         placeholder="Digite o nome da sala" 
+        autocomplete="off"
       />
       <select name='limit'>
         <option value="0" disabled selected>Limite de pessoas</option>
