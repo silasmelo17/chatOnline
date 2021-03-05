@@ -1,7 +1,7 @@
 
 import { renderMessage, renderMyMessage, moveScroll, getMessage, getUser, clearInputMessage } from './render.js'
 
-const socket = io('http://192.168.1.103:3000')
+const socket = io('http://localhost:3000')
 const name_room = window.location.pathname.replace('/chat/', '')
 
 
@@ -11,6 +11,12 @@ const emitConnectOrDisconnect = event =>
     name_room,
     author: getUser()
   })
+
+window.addEventListener( 'beforeunload', () => {
+  emitConnectOrDisconnect('leave room')
+})
+
+
 
 socket.on( 'connect', () => {
   emitConnectOrDisconnect('join room')
