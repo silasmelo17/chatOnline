@@ -34,8 +34,10 @@
         placeholder="Digite o nome da sala" 
         autocomplete="off"
       />
-      <select name='limit'>
-        <option value="0" disabled selected>Limite de pessoas</option>
+
+      <label for="limit">Limite</label>
+      <select name='limit' id='limit'>
+        <option value="0" disabled selected>Limite de conexões simultaneas</option>
         <option value="5">5</option>
         <option value="10">10</option>
         <option value="15">15</option>
